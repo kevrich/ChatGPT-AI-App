@@ -17,7 +17,7 @@ function loader(element) {
         if (element.textContent === '....') {
             element.textContent = '';
         }
-    }, 3000);
+    }, 9000);
 }
 
 function typeText(element, text) {
@@ -86,7 +86,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('http://localhost:5173/', {
+    const response = await fetch('http://localhost:4200/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
